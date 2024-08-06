@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background: #222;
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #4c96d6;
+}
+
+header {
+  position: fixed;
+  background-color: #222;
+  width: 100%;
+  display: flex;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625em 6.25em;
+}
+
+.navigation a,
+.logo {
+  color: azure;
+  margin: 0.3125em 1.25em;
+  text-decoration: none;
+}
+
+.navigation a {
+  letter-spacing: 0.15625em;
+  font-weight: 80;
+  transition: all 0.6s ease;
+}
+
+.navigation a:hover {
+  font-size: 1.125em;
+  font-weight: 90;
+  color: #4c96d6;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  transition: all 0.6s ease;
+}
+
+.logo:hover {
+  font-size: 1.375em;
+  font-weight: 600;
+  color: #4c96d6;
+}
+
+.container {
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+.image i {
+  margin: 0 0;
+  font-size: 12.5em;
+  border-radius: 1.25em;
+  transition: all 1s ease;
+}
+
+.image i:hover {
+  transform: scale(1.2);
+  border-radius: 1.875em;
+}
+
+.text {
+  margin: 0 1.875em;
+}
+
+.text h2 {
+  font-size: 0.75em;
+  color: azure;
+  letter-spacing: 0.09375em;
+}
+
+.text h2 span {
+  display: inline-block;
+  margin-top: 0.625em;
+  font-size: 4.375em;
+}
+
+.text .main-btn {
+  background-color: #ffffff1a;
+  padding: 0.625em;
+  text-decoration: none;
+  border-radius: 0.9375em;
+  letter-spacing: 0.0625em;
+  margin-top: 1.25em;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1.875em;
+  transition: all 1s ease;
+
+}
+
+.text .main-btn:hover {
+  font-size: 1.125em;
+  background-color: #cccccc71;
+}
+
+.text h3 {
+  color: azure;
+  letter-spacing: 0.0625em;
+}
+
+.cards {
+  background: linear-gradient(#111, #222);
+}
+
+.icons a {
+  font-size: 1.25em;
+  padding-right: 0.375em;
+  margin-left: 0.625em;
+  transition: all 1s ease;
+}
+
+.icons a:hover {
+  font-size: 1.5em;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: azure;
+  font-size: 1.8em;
+  font-weight: 800;
+  letter-spacing: 0.09375em;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 21.25em;
+  background-color: transparent;
+  box-shadow: 0 0.3125em 1.5625em rgba(76, 150, 214, 0.1);
+  border-radius: 0.9375em;
+  padding: 1.5625em;
+  margin: 1.5625em;
+  min-height: 30.625em;
+  transition: all 1s ease;
+}
+
+
+.card:hover {
+  transform: scale(1.06);
+}
+
+.card-icon {
+  font-size: 8em;
+  text-align: center;
+}
+
+.card-info {
+  text-align: center;
+}
+
+.card-info h3 {
+  margin: 0.625em;
+  color: azure;
+  font-size: 1.1875em;
+  font-weight: 700;
+  letter-spacing: 0.03125em;
+}
+
+.card-info p {
+  margin: 0.625em;
+  letter-spacing: 0.0625em;
+}
+
+.projects {
+  background-color: #000;
+}
+
+.projects .content {
+  margin: 1.875em;
+}
+
+.project-card {
+  background: linear-gradient(#111, #222);
+  border: 0.0625em solid #4c96d6;
+  min-height: 14em;
+  width: 18.75em;
+  overflow: hidden;
+  margin: 1.25em;
+  border-radius: 0.625em;
+  transition: all 0.8s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-img img {
+  width: 100%;
+}
+
+.project-card:hover .project-img img {
+  opacity: 0.7;
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: azure;
+}
+
+.project-title {
+  padding: 0.3125em 0;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.project-title .More-Details {
+  color: #0088ff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.project-title .More-Details:hover {
+  transform: scale(1.08);
+  color: #465c6e;
+}
+
+.cont .card {
+  min-height: 22.5em;
+  min-width: 1px;
+}
+
+
+.cont .card i {
+  transform: scale(0.6);
+}
+
+
+
+.cont .card .card-info h3 {
+  transform: scale(1.3);
+}
+
+.cont .card .card-info p {
+  transform: scale(1.07);
+  word-wrap: break-word;
+  
+}
+
+footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25em;
+  margin-top: 1.875em;
+}
+
+footer p {
+  color: azure;
+}
+
+footer span {
+  color: #4c96d6;
+  font-weight: 700;
+}
+
+footer i {
+  color: azure;
+}
+
+
+@media (max-width:1023px) {
+  
+  header {
+    padding: 12px 20px;
+    align-items: center;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+  .text h2{
+    font-size: 0.50em;
+  }
+  .container .image i{
+    font-size: 9em;
+  }
+  .navigation a:hover {
+    font-size: 1.05em;
+    font-weight: 90;
+    color: #4c96d6;
+  }
+  .logo{
+    font-size: 1.20em;
+  }
+  .logo:hover {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #4c96d6;
+  }
+  
+}
+
+@media (max-width:641px){
+  body{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:300px){
+  body{
+    font-size: 10px;
+  }
+}
