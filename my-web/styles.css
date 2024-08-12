@@ -98,6 +98,7 @@ header {
 }
 
 .text .main-btn {
+  position:relative;
   background-color: #ffffff1a;
   padding: 0.625em;
   text-decoration: none;
@@ -108,8 +109,9 @@ header {
   display: inline-block;
   margin-bottom: 1.875em;
   transition: all 1s ease;
-
 }
+
+
 
 .text .main-btn:hover {
   font-size: 1.125em;
@@ -153,6 +155,7 @@ header {
 }
 
 .card {
+  position: relative;
   width: 21.25em;
   background-color: transparent;
   box-shadow: 0 0.3125em 1.5625em rgba(76, 150, 214, 0.1);
@@ -163,10 +166,18 @@ header {
   transition: all 1s ease;
 }
 
-
 .card:hover {
-  transform: scale(1.06);
+  transform: rotateX(20deg) rotateY(20deg) scale(1.06);
 }
+.card-icon ,.card-info{
+  transition: all 1s ease;
+
+}
+
+.card-icon:hover ,.card-info:hover {
+  transform: translateY(-10px); 
+}
+
 
 .card-icon {
   font-size: 8em;
@@ -268,7 +279,7 @@ header {
 .cont .card .card-info p {
   transform: scale(1.07);
   word-wrap: break-word;
-  
+
 }
 
 footer {
@@ -295,7 +306,7 @@ footer i {
 
 
 @media (max-width:1023px) {
-  
+
   header {
     padding: 12px 20px;
     align-items: center;
@@ -327,7 +338,7 @@ footer i {
     font-weight: 600;
     color: #4c96d6;
   }
-  
+
 }
 
 @media (max-width:641px){
